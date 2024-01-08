@@ -1,0 +1,120 @@
+
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    min-height: 90vh;
+    margin-top: 10px;
+
+}
+
+.card{
+    flex:.4;
+    background-color: #092635;
+    color:white;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.54);
+    /* height:50vh; */
+    overflow: hidden;
+    position: relative;
+    transition:all .5s;
+    
+}
+
+.card .mall-img{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    object-position: center;
+    /* width: 200px; */
+    /* margin-right:25px; */
+}
+
+.total-wrapper{
+    display: flex;
+    /* margin: 10px 0; */
+    
+
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.total-head,.mall-name{
+    font-size: 1.5rem;
+}
+
+.total-count{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    margin-top: -10px;
+}
+
+.card-btn{
+    background-color: #5C8374;
+    color: white;
+    border-radius: 5px;
+    margin: 2px auto;
+    transition: all .5s;
+    border: 1px solid transparent;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%) translateY(0px);
+    /* font-weight: bold; */
+    
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    /* box-shadow: 0 10px 10px rgba(0,0,0,0.54); */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.card:hover > .card-btn{
+    left: 50%;
+    bottom: 45%;
+}
+
+.card:hover > .mall-img{
+    opacity: .5;
+}
+
+.card-btn:hover{
+    background-color: white;
+    color: #5C8374;
+    border: 1px solid #5C8374;
+    transform: translateX(-50%) translateY(-3px);
+}
+.card-btn:active{
+    background-color: white;
+    color: #5C8374;
+    border: 1px solid #5C8374;
+    transform: translateX(-50%) translateY(0px);
+}
+
+
+
+
+.mall-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* background-color: black; */
+}
+
